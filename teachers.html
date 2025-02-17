@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokytojams - BENO Gitaros Kursai</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .lessons-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .lesson-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .lesson-btn {
+            padding: 1rem;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .lesson-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .lesson-content {
+            display: none;
+            padding: 2rem;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .lesson-content.active {
+            display: block;
+        }
+        
+        .lesson-content h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .lesson-content h3 {
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .lesson-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .lesson-content p {
+            margin-bottom: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+        <div class="header-left">
+            <a href="#" class="social-icon facebook"><div class="icon-placeholder">F</div></a>
+            <a href="#" class="social-icon youtube"><div class="icon-placeholder">YT</div></a>
+            <a href="index.html" class="logo"><div class="logo-placeholder">BENO</div></a>
+        </div>
+        <div class="header-center">
+            <div class="contact-info">
+                <div class="icon-placeholder">📞</div>
+                <span>+370 67060143</span>
+                <span>pamokos@sugitara.lt</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="nav-links">
+                <a href="#">Apie</a>
+                <a href="#">Kontaktai</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Registruotis</a>
+                    <div class="dropdown-content">
+                        <a href="teachers.html">Mokytojams</a>
+                        <a href="students.html">Mokiniams</a>
+                    </div>
+                </div>
+            </div>
+            <div class="language-select">
+                <a href="#" class="active">LT</a>
+                <a href="#">EN</a>
+            </div>
+            <a href="#" class="join-btn">PRISIJUNGTI</a>
+        </div>
+    </header>
+
+    <main class="lessons-container">
+        <h1>Mokytojų Pamokų Planas</h1>
+        
+        <div class="lesson-buttons">
+            <button class="lesson-btn" data-lesson="1">1 Pamoka: Vertė</button>
+            <button class="lesson-btn" data-lesson="2">2 Pamoka: Baimių Įveikimas</button>
+            <button class="lesson-btn" data-lesson="3">3 Pamoka: Tikėjimas</button>
+            <button class="lesson-btn" data-lesson="4">4 Pamoka: Vertybės</button>
+            <button class="lesson-btn" data-lesson="5">5 Pamoka: Dovana</button>
+            <button class="lesson-btn" data-lesson="6">6 Pamoka: Atsakomybė</button>
+            <button class="lesson-btn" data-lesson="7">7 Pamoka: Laisvė</button>
+            <button class="lesson-btn" data-lesson="8">8 Pamoka: Kelionė</button>
+            <button class="lesson-btn" data-lesson="9">9 Pamoka: Troškimas</button>
+            <button class="lesson-btn" data-lesson="10">10 Pamoka: Gyvenimas</button>
+        </div>
+
+        <div id="lesson1" class="lesson-content">
+            <h2>1 Pamoka: Vertė</h2>
+            <h3>Temos:</h3>
+            <ul>
+                <li>Gitaros mokymosi vertės supratimas</li>
+                <li>Pasitikėjimo savimi ugdymas</li>
+            </ul>
+            
+            <h3>Akordai mokyti:</h3>
+            <ul>
+                <li>E major</li>
+                <li>Am</li>
+            </ul>
+            
+            <h3>Daina mokytis:</h3>
+            <p>"We Will Rock You" by Queen (naudojant tik E major akordą)</p>
+            
+            <h3>Pamokos struktūra:</h3>
+            <h4>Įvadas (10 minučių):</h4>
+            <ul>
+                <li>Pasveikinkite dalyvius ir aptarkite, kodėl jie pasirinko mokytis gitara</li>
+                <li>Paaiškinkite nuoseklios praktikos ir kantrybės svarbą</li>
+                <li>Pabrėžkite gitaros mokymosi, kaip visą gyvenimą trunkančio įgūdžio, vertę</li>
+            </ul>
+            
+            <h4>Apšilimas/Apžvalga (10 minučių):</h4>
+            <ul>
+                <li>Aptarkite gitarų tipus (akustinė vs. elektrinė)</li>
+                <li>Pademonstruokite, kaip teisingai laikyti gitarą</li>
+                <li>Pristatykite stygas, grifus, pirštų numerius, tabulatūrą ir derinimą naudojant Guitar Tuna programėlę</li>
+            </ul>
+            
+            <h4>Nauja medžiaga (35 minutės):</h4>
+            <ul>
+                <li>Mokykite E major akordą</li>
+                <li>Praktikuokite ritmingą skambinimą kartu dainuojant arba skaičiuojant garsiai</li>
+                <li>Pristatykite dainą "We Will Rock You" ir grokite kartu naudodami tik E major akordą</li>
+            </ul>
+            
+            <h4>Grupinė veikla/Refleksija (15 minučių):</h4>
+            <ul>
+                <li>Paprašykite mokinių pasidalinti, kas juos įkvėpė pradėti mokytis gitara</li>
+                <li>Užbaikite su paskatinimu ir nustatykite tikslą kitai savaitei: rasti paprastą dviejų akordų dainą praktikai namuose</li>
+            </ul>
+        </div>
+
+        <!-- Similar content blocks for lessons 2-10 -->
+        <div id="lesson2" class="lesson-content">
+            <h2>2 Pamoka: Baimių Įveikimas</h2>
+            <!-- Lesson 2 content -->
+        </div>
+        <!-- ... -->
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 Benoguitar</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.lesson-btn');
+            const contents = document.querySelectorAll('.lesson-content');
+            
+            // Show first lesson by default
+            contents[0].classList.add('active');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const lessonNum = button.getAttribute('data-lesson');
+                    
+                    // Hide all content
+                    contents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show selected content
+                    document.getElementById(`lesson${lessonNum}`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>

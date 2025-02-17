@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mokiniams - BENO Gitaros Kursai</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .lessons-container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+        }
+        
+        .lesson-buttons {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+        
+        .lesson-btn {
+            padding: 1rem;
+            background-color: var(--primary-color);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+        
+        .lesson-btn:hover {
+            opacity: 0.9;
+        }
+        
+        .lesson-content {
+            display: none;
+            padding: 2rem;
+            background-color: #f5f5f5;
+            border-radius: 4px;
+            margin-bottom: 2rem;
+        }
+        
+        .lesson-content.active {
+            display: block;
+        }
+        
+        .lesson-content h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .lesson-content h3 {
+            margin: 1.5rem 0 1rem;
+        }
+        
+        .lesson-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .lesson-content p {
+            margin-bottom: 1rem;
+        }
+
+        .temp-image {
+            background-color: #ddd;
+            height: 200px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 1rem 0;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Same header as index.html -->
+        <div class="header-left">
+            <a href="#" class="social-icon facebook"><div class="icon-placeholder">F</div></a>
+            <a href="#" class="social-icon youtube"><div class="icon-placeholder">YT</div></a>
+            <a href="index.html" class="logo"><div class="logo-placeholder">BENO</div></a>
+        </div>
+        <div class="header-center">
+            <div class="contact-info">
+                <div class="icon-placeholder">📞</div>
+                <span>+370 67060143</span>
+                <span>pamokos@sugitara.lt</span>
+            </div>
+        </div>
+        <div class="header-right">
+            <div class="nav-links">
+                <a href="#">Apie</a>
+                <a href="#">Kontaktai</a>
+                <div class="dropdown">
+                    <a href="#" class="dropbtn">Registruotis</a>
+                    <div class="dropdown-content">
+                        <a href="teachers.html">Mokytojams</a>
+                        <a href="students.html">Mokiniams</a>
+                    </div>
+                </div>
+            </div>
+            <div class="language-select">
+                <a href="#" class="active">LT</a>
+                <a href="#">EN</a>
+            </div>
+            <a href="#" class="join-btn">PRISIJUNGTI</a>
+        </div>
+    </header>
+
+    <main class="lessons-container">
+        <h1>Mokinių Pamokų Planas</h1>
+        
+        <div class="lesson-buttons">
+            <button class="lesson-btn" data-lesson="1">1 Pamoka: Vertė</button>
+            <button class="lesson-btn" data-lesson="2">2 Pamoka: Baimių Įveikimas</button>
+            <button class="lesson-btn" data-lesson="3">3 Pamoka: Tikėjimas</button>
+            <button class="lesson-btn" data-lesson="4">4 Pamoka: Vertybės</button>
+            <button class="lesson-btn" data-lesson="5">5 Pamoka: Dovana</button>
+            <button class="lesson-btn" data-lesson="6">6 Pamoka: Atsakomybė</button>
+            <button class="lesson-btn" data-lesson="7">7 Pamoka: Laisvė</button>
+            <button class="lesson-btn" data-lesson="8">8 Pamoka: Kelionė</button>
+            <button class="lesson-btn" data-lesson="9">9 Pamoka: Troškimas</button>
+            <button class="lesson-btn" data-lesson="10">10 Pamoka: Gyvenimas</button>
+        </div>
+
+        <div id="lesson1" class="lesson-content">
+            <h2>1 Pamoka: Vertė</h2>
+            <h3>Ką išmoksite:</h3>
+            <ul>
+                <li>Pagrindiniai gitaros laikymo principai</li>
+                <li>Gitaros dalių pažinimas (stygos, grifai, etc.)</li>
+                <li>E major akordas</li>
+                <li>Pagrindinis ritmo skaičiavimas</li>
+            </ul>
+            
+            <h3>Daina:</h3>
+            <p>"We Will Rock You" by Queen</p>
+            <div class="temp-image">TEMPORARY text HERE - Chord diagram for E major</div>
+            
+            <h3>Praktiniai patarimai:</h3>
+            <ul>
+                <li>Kaip teisingai laikyti gitarą</li>
+                <li>Kaip derinti gitarą naudojant Guitar Tuna programėlę</li>
+                <li>Kaip praktikuotis namuose</li>
+            </ul>
+            
+            <h3>Namų darbai:</h3>
+            <p>Praktikuoti E major akordą ir ritmingą skambinimą. Rasti paprastą dviejų akordų dainą, kurią norėtumėte išmokti.</p>
+        </div>
+
+        <div id="lesson2" class="lesson-content">
+            <h2>2 Pamoka: Baimių Įveikimas</h2>
+            <h3>Ką išmoksite:</h3>
+            <ul>
+                <li>Am akordas</li>
+                <li>D minor (Dm) akordas</li>
+                <li>Akordų keitimo technika</li>
+                <li>Tabulatūros skaitymo pagrindai</li>
+            </ul>
+            
+            <h3>Dainos:</h3>
+            <p>Praktikuosime paprastas dainas naudojant Am ir E akordus</p>
+            <div class="temp-image">TEMPORARY text HERE - Chord diagrams for Am and Dm</div>
+            
+            <h3>Praktiniai patarimai:</h3>
+            <ul>
+                <li>Kaip greitai ir sklandžiai keisti akordus</li>
+                <li>Kaip skaityti paprastą tabulatūrą</li>
+                <li>Kaip praktikuoti melodijos grojimą</li>
+            </ul>
+            
+            <h3>Namų darbai:</h3>
+            <p>Praktikuoti akordų keitimą tarp Am ir E. Bandyti groti paprastą melodiją pagal tabulatūrą.</p>
+        </div>
+
+        <!-- Similar content blocks for lessons 3-10 -->
+    </main>
+
+    <footer>
+        <p>Copyright © 2025 Benoguitar</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const buttons = document.querySelectorAll('.lesson-btn');
+            const contents = document.querySelectorAll('.lesson-content');
+            
+            // Show first lesson by default
+            contents[0].classList.add('active');
+            
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const lessonNum = button.getAttribute('data-lesson');
+                    
+                    // Hide all content
+                    contents.forEach(content => {
+                        content.classList.remove('active');
+                    });
+                    
+                    // Show selected content
+                    document.getElementById(`lesson${lessonNum}`).classList.add('active');
+                });
+            });
+        });
+    </script>
+</body>
+</html>
